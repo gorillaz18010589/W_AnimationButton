@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+
+    android:duration //動畫持續的時間(毫秒)
+    android:fromAlpha //動畫開始的透明度。0為完全透明，1為不透明。
+    android:toAlpha  //動畫結束的透明度。0為完全透明，1為不透明。
+    android:startOffset //開始間隔
+    android:fillAfter  //如果設置為true，控件動畫結束時，將保持動畫最後時的狀態
+    android:fillBefore //如果設置為true,控件動畫結束時，還原到開始動畫前的狀態
+    android:fillEnabled //與android:fillBefore 效果相同，都是在動畫結束時，將控件還原到初始化狀態
+    android:repeatCount  //重複次數
+    android:repeatMode  //重複類型，有reverse和restart兩個值，reverse表示倒序回放，restart表示重新放一遍，必須與repeatCount一起使 用才能看到效果。因為這裡的意義是重複的類型，即回放時的動作。
+    android:interpolator //設定插值器，其實就是指定的動作效果，比如彈跳效果等，不在這小節中講解，後面會單獨列出一單講解。
+
+    -->
+
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration="600"
+        android:repeatMode="reverse"
+        android:repeatCount="infinite"/>
+
+</set>
